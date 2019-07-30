@@ -14,16 +14,22 @@
     font-family: Poppins
 }
 body{
-    background:var(--red-color) url("../images/bg-intro-mobile.png");
+    background-image: url('../images/bg-intro-mobile.png');
+    background-color: var(--red-color);
+    -webkit-background-image: url('../images/bg-intro-mobile.png');
+    -webkit-background-color: linear-gradient(var(--red-color),var(--red-color)); 
     background-size: cover;
+    -webkit-background-size: cover;
     background-position:center; 
+    -webkit-background-position:center;
     font-size: 16px;
     font-family: Poppins
 }
 @media only screen and (min-width:800px){
     body{
         height: 100%;
-        background:var(--red-color) url("../images/bg-intro-desktop.png");
+        background-image:url('../images/bg-intro-desktop.png'); 
+        -webkit-background-image:url('../images/bg-intro-desktop.png');
     }
 }
 
