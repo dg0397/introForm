@@ -36,7 +36,8 @@ function alertInput(){
     }else if(this.name === 'email' && !validateEmail(this.value)){
         
         this.parentNode.lastElementChild.textContent = 'Looks like this is not an email'; //check the email and write a message if email is wrong
-        
+        this.parentNode.lastElementChild.classList.add('alert'); //add the alert class to the div
+    
     }else{
         
         this.parentNode.lastElementChild.textContent = ''; // remove the message in the div
