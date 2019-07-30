@@ -1,0 +1,204 @@
+:root{
+    --red-color: hsl(0, 100%, 74%);
+    --green-color: hsl(154, 59%, 51%);
+    --green-color-light: hsl(154, 59%, 56%);
+    --green-color-dark: hsl(154, 59%, 41%);
+    --blue-color: hsl(248, 32%, 49%);
+    --dark-blue-color: hsl(249, 10%, 26%);
+    --grayish-blue-color: hsl(246, 25%, 77%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins
+}
+body{
+    background:var(--red-color) url("../images/bg-intro-mobile.png");
+    background-size: cover;
+    background-position:center; 
+    font-size: 16px;
+    font-family: Poppins
+}
+@media only screen and (min-width:800px){
+    body{
+        height: 100%;
+        background:var(--red-color) url("../images/bg-intro-desktop.png");
+    }
+}
+
+/*Container Main*/
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem .8rem;
+    max-width: 550px;
+    min-width: 290px;
+    margin: 0 auto;
+}
+@media only screen and (min-width:800px){
+    .wrapper{
+        max-width: 1200px;
+        width: 80%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Text*/
+
+.container__text{
+    padding: 1.5rem 0;
+    text-align: center;
+    color: white;
+}
+.container__text h2{
+    font-size:1.8rem
+}
+.container__text p{
+    margin-top: 1rem;
+    font-size: .85rem;
+    font-weight: 500
+}
+@media only screen and (min-width:800px){
+    .container__text{
+        width: 40%;
+        margin-right: 2rem;
+        text-align: left;
+    }
+    .container__text h2{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .container__text h2{
+        font-size: 2.5rem;
+    }
+    .container__text p{
+        font-size: 1.2rem
+    }
+}
+/*Container Form*/
+
+.container__form{
+    padding: 1rem 0;
+}
+.container__form header{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: .8rem;
+    color: white;
+    background: var(--blue-color);
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.container__form header span{
+    font-weight: 400
+}
+@media only screen and (min-width:800px){
+    .container__form{
+        width: 60%;
+        max-width: 450px
+    }
+}
+
+/*Form*/
+
+.container__main{
+    padding: 1rem 1rem 1.25rem 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.container__inputs{
+    border: none;
+}
+.container__input{
+    margin-bottom: .7rem;
+    width: 100%;
+}
+
+.container__input input{
+    width: 100%;
+    height: 3em;
+    margin-bottom: .5rem;
+    padding: .4em;
+    font-size: 1.1em;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    color:#1c1c1c;
+    border: 1px solid var(--grayish-blue-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/*these classes are add with JS (.alert and .input-alert) */
+
+.alert{
+    margin-top: -.3rem;
+    text-align: right;
+    color: var(--red-color);
+    font-style: italic
+}
+.input-alert{
+    background: url('../images/icon-error.svg') no-repeat;
+    background-position: 95% center;
+    border: 2px solid var(--red-color) !important;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: var(--green-color);
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease-in 
+}
+.btn:hover{
+    background:var(--green-color-light);
+    font-size: .85rem;
+    transition: all 0.015s ease-in 
+}
+.btn:active{
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+    background: var(--green-color-dark);
+}
+
+/*Form's footer*/
+
+.container__main footer{
+    font-size: .7rem;
+    text-align: center;
+    color: var(--grayish-blue-color);
+}
+.container__main footer a{
+    color: red;
+    text-decoration: none
+}
+
+/*Footer body*/
+
+.attribution { 
+    padding: .8rem 0;
+    font-size: 11px; 
+    text-align: center;
+    color: white; 
+    opacity:0.8;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
