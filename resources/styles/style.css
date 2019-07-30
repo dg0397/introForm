@@ -14,8 +14,8 @@
     font-family: Poppins
 }
 body{
-    background-image: url(../images/bg-intro-mobile.png), linear-gradient(var(--red-color),var(--red-color));
-    -webkit-background-image: url(../images/bg-intro-mobile.png), linear-gradient(var(--red-color),var(--red-color)); 
+    background-image: url('../images/bg-intro-mobile.png'), linear-gradient(var(--red-color),var(--red-color));
+    -webkit-background-image: url('../images/bg-intro-mobile.png'), linear-gradient(var(--red-color),var(--red-color)); 
     background-size: cover;
     -webkit-background-size: cover;
     background-position:center; 
@@ -26,8 +26,8 @@ body{
 @media only screen and (min-width:800px){
     body{
         height: 100%;
-        background-image:url(../images/bg-intro-desktop.png), linear-gradient(var(--red-color),var(--red-color));
-        -webkit-background-image:url(../images/bg-intro-desktop.png), linear-gradient(var(--red-color),var(--red-color));
+        background-image:url('../images/bg-intro-desktop.png'), linear-gradient(var(--red-color),var(--red-color));
+        -webkit-background-image:url('../images/bg-intro-desktop.png'), linear-gradient(var(--red-color),var(--red-color));
     }
 }
 
