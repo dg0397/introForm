@@ -15,8 +15,11 @@
 }
 body{
     background: url(../images/bg-intro-mobile.png), linear-gradient(var(--red-color),var(--red-color));
+    -webkit-background: url(../images/bg-intro-mobile.png), linear-gradient(var(--red-color),var(--red-color)); 
     background-size: cover;
+    -webkit-background-size: cover;
     background-position:center; 
+    -webkit-background-position:center;
     font-size: 16px;
     font-family: Poppins
 }
@@ -24,6 +27,7 @@ body{
     body{
         height: 100%;
         background:url(../images/bg-intro-desktop.png), linear-gradient(var(--red-color),var(--red-color));
+        -webkit-background:url(../images/bg-intro-desktop.png), linear-gradient(var(--red-color),var(--red-color));
     }
 }
 
