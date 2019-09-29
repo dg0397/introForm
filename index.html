@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicon-32x32.png">
   <link rel="stylesheet" href="./resources/styles/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&display=swap" rel="stylesheet">
-  <script src="resources/scripts/main.js" type="text/javascript" defer='defer'></script>
+  <script src="resources/scripts/main.js" defer='defer'></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -33,27 +33,35 @@
       <!--Form-->
       <div class="container__main">
         <form action="#">
-          <fieldset class="container__inputs">
+          <div class="container__inputs">
             <div class="container__input">
-              <input type="text" name="firstName" placeholder="First Name" required>
+              <label for="firstName">
+                  <input type="text" name="firstName" placeholder="First Name" required>
+              </label>
               <div></div>
             </div>
             <div class="container__input">
-              <input type="text" name="lastName" placeholder="Last Name" required>
+              <label for="lastName">
+                <input type="text" name="lastName" placeholder="Last Name" required>
+              </label>
               <div></div>
             </div>
             <div class="container__input">
-              <input type="email" name="email" placeholder="Email Address" required>
+              <label for="email">
+                <input type="email" name="email" placeholder="Email Address" required>
+              </label>
               <div></div>
             </div>
             <div class="container__input">
-              <input type="password" name="password" placeholder="Password" required>
+              <label for="password">
+                <input type="password" name="password" placeholder="Password" required>
+              </label>
               <div></div>
             </div>
             <div class="container__input">
               <button class="btn">Claim your free trial</button>
             </div>
-          </fieldset>
+          </div>
         </form>
         
         <!--Form's footer-->

@@ -1,6 +1,8 @@
 const inputs = document.querySelectorAll('input');//select all inputs
 const btn = document.querySelector('.btn'); //select the button
+const form = document.querySelector("form");
 
+form.reset();
 
 //this function generates the alert message
 function typeOfInput(name) {
@@ -28,19 +30,19 @@ function validateEmail(email) {
 function alertInput(){
     if(this.value.length === 0){
         
-        this.parentNode.lastElementChild.textContent = typeOfInput(this.name); // write the message in the div
-        this.parentNode.lastElementChild.classList.add('alert'); //add the alert class to the div
+        this.parentNode.parentNode.lastElementChild.textContent = typeOfInput(this.name); // write the message in the div
+        this.parentNode.parentNode.lastElementChild.classList.add('alert'); //add the alert class to the div
 
         this.classList.add('input-alert'); //add the input-alert class to the input
     
     }else if(this.name === 'email' && !validateEmail(this.value)){
         
-        this.parentNode.lastElementChild.textContent = 'Looks like this is not an email'; //check the email and write a message if email is wrong
-        this.parentNode.lastElementChild.classList.add('alert'); //add the alert class to the div
+        this.parentNode.parentNode.lastElementChild.textContent = 'Looks like this is not an email'; //check the email and write a message if email is wrong
+        this.parentNode.parentNode.lastElementChild.classList.add('alert'); //add the alert class to the div
     
     }else{
         
-        this.parentNode.lastElementChild.textContent = ''; // remove the message in the div
+        this.parentNode.parentNode.lastElementChild.textContent = ''; // remove the message in the div
         this.classList.remove('input-alert'); // remove the input-alert class
     
     }
@@ -53,8 +55,8 @@ function checkInputs(){
         
         if(input.value.length === 0){
             
-            input.parentNode.lastElementChild.textContent = typeOfInput(input.name);// write the message in the div
-            input.parentNode.lastElementChild.classList.add('alert');//add the alert class to the div
+            input.parentNode.parentNode.lastElementChild.textContent = typeOfInput(input.name);// write the message in the div
+            input.parentNode.parentNode.lastElementChild.classList.add('alert');//add the alert class to the div
 
             input.classList.add('input-alert');//add the input-alert class to the input
 
